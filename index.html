@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fransisco Cosmetics | Premium Cosmetics</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                nude: '#F5EBE0',
+                sand: '#E3D5CA',
+                taupe: '#D5BDAF',
+                olive: '#7B8B6F',
+                nudeGreen: '#8B9B7A',
+                terracotta: '#A68A64',
+                ivory: '#FAF9F6',
+                charcoal: '#332C2B',
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FAF9F6;
+        color: #332C2B;
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #FAF9F6;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #D5BDAF;
+        border-radius: 10px;
+      }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translate(-50%, 12px); }
+        to { opacity: 1; transform: translate(-50%, 0); }
+      }
+      @keyframes slideInRight {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+      }
+      .animate-slide-in-right {
+        animation: slideInRight 0.3s ease-out forwards;
+      }
+      @keyframes slideInRight {
+        from { opacity: 0; transform: translateX(100%); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+      .animate-slide-in-right {
+        animation: slideInRight 0.3s ease-out forwards;
+      }
+      .focus-ring:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #FAF9F6, 0 0 0 4px #A68A64;
+      }
+      button:focus-visible, a:focus-visible, [role="button"]:focus-visible,
+      input:focus-visible, select:focus-visible, textarea:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px #FAF9F6, 0 0 0 4px #A68A64;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

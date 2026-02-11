@@ -1,0 +1,8 @@
+
+{
+  "name": "Épure - Premium Cosmetics & Para-pharmacy",
+  "description": "A minimalist, high-end e-commerce platform for curated skincare, haircare, and para-pharmacy products, featuring a clean aesthetic and AI-powered skin consultation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
