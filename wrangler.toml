@@ -1,8 +1,5 @@
 name = "fransisco-cosmetics"
 compatibility_date = "2026-02-11"
 
-type = "javascript" # or "webpack" / "rust" depending on project
-
-[site]
-bucket = "./dist"      # <-- your build directory
-entry-point = "."      # root of project
+[assets]
+directory = "./dist"
